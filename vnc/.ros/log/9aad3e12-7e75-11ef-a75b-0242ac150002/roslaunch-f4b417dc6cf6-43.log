@@ -1,0 +1,59 @@
+[roslaunch][INFO] 2024-09-29 15:15:04,345: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2024-09-29 15:15:04,350: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2024-09-29 15:15:04,351: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2024-09-29 15:15:04,351: roslaunch env is environ({'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'f4b417dc6cf6', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'DISPLAY': ':1', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_HOSTNAME': 'vnc_ros', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/root/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roscore', 'ROS_LOG_FILENAME': '/root/.ros/log/9aad3e12-7e75-11ef-a75b-0242ac150002/roslaunch-f4b417dc6cf6-43.log'})
+[roslaunch][INFO] 2024-09-29 15:15:04,351: starting in server mode
+[roslaunch.parent][INFO] 2024-09-29 15:15:04,352: starting roslaunch parent run
+[roslaunch][INFO] 2024-09-29 15:15:04,352: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2024-09-29 15:15:04,530: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,530: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,531: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,531: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2024-09-29 15:15:04,531: starting parent XML-RPC server
+[roslaunch.server][INFO] 2024-09-29 15:15:04,532: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2024-09-29 15:15:04,532: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2024-09-29 15:15:04,532: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2024-09-29 15:15:04,533: Started XML-RPC server [http://vnc_ros:45971/]
+[xmlrpc][INFO] 2024-09-29 15:15:04,533: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2024-09-29 15:15:04,545: started roslaunch server http://vnc_ros:45971/
+[roslaunch.parent][INFO] 2024-09-29 15:15:04,546: ... parent XML-RPC server started
+[roslaunch][INFO] 2024-09-29 15:15:04,546: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,550: auto-starting new master
+[roslaunch][INFO] 2024-09-29 15:15:04,550: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2024-09-29 15:15:04,550: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,550: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,551: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2024-09-29 15:15:04,551: process[master]: starting os process
+[roslaunch][INFO] 2024-09-29 15:15:04,551: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/root/.ros/log/9aad3e12-7e75-11ef-a75b-0242ac150002/master.log']]
+[roslaunch][INFO] 2024-09-29 15:15:04,551: process[master]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2024-09-29 15:15:04,558: process[master]: started with pid [70]
+[roslaunch][INFO] 2024-09-29 15:15:04,559: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,660: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,761: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,862: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,963: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,965: master.is_running[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,967: ROS_MASTER_URI=http://vnc_ros:11311/
+[roslaunch][INFO] 2024-09-29 15:15:04,969: setting /run_id to 9aad3e12-7e75-11ef-a75b-0242ac150002
+[roslaunch][INFO] 2024-09-29 15:15:04,970: setting /roslaunch/uris/host_vnc_ros__45971' to http://vnc_ros:45971/
+[roslaunch][INFO] 2024-09-29 15:15:04,973: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2024-09-29 15:15:04,973: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://vnc_ros:11311/]
+[roslaunch][INFO] 2024-09-29 15:15:04,974: process[rosout-1]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'f4b417dc6cf6', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'DISPLAY': ':1', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://vnc_ros:11311/', 'ROS_HOSTNAME': 'vnc_ros', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/root/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roscore', 'ROS_LOG_FILENAME': '/root/.ros/log/9aad3e12-7e75-11ef-a75b-0242ac150002/roslaunch-f4b417dc6cf6-43.log'}]
+[roslaunch][INFO] 2024-09-29 15:15:04,988: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2024-09-29 15:15:04,988: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,988: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,988: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2024-09-29 15:15:04,988: ... registered process [rosout-1]
+[roslaunch][INFO] 2024-09-29 15:15:04,988: process[rosout-1]: starting os process
+[roslaunch][INFO] 2024-09-29 15:15:04,989: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/root/.ros/log/9aad3e12-7e75-11ef-a75b-0242ac150002/rosout-1.log']]
+[roslaunch][INFO] 2024-09-29 15:15:04,989: process[rosout-1]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2024-09-29 15:15:04,993: process[rosout-1]: started with pid [82]
+[roslaunch][INFO] 2024-09-29 15:15:04,994: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2024-09-29 15:15:04,994: load_parameters starting ...
+[roslaunch][INFO] 2024-09-29 15:15:04,999: ... load_parameters complete
+[roslaunch][INFO] 2024-09-29 15:15:04,999: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2024-09-29 15:15:04,999: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2024-09-29 15:15:04,999: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 137159283574528)>
+[roslaunch.parent][INFO] 2024-09-29 15:15:04,999: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2024-09-29 15:15:05,000: spin

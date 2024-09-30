@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  vnc_ros:
+    build:
+      context: ./vnc
+    container_name: vnc_ros
+    hostname: vnc_ros
+    ports:
+      - "6080:6080"  # noVNC port
+      - "5901:5901"  # VNC port
+      - "11311:11311"  # ROS master port
+    environment:
+      - DISPLAY=:1
+      - ROS_HOSTNAME=vnc_ros
+      - ROS_MASTER_URI=http://vnc_ros:11311
+    networks:
+      - ros_network
+
+  app_backend:
+    build:
+      context: ./backend
+    container_name: app_backend
+    hostname: app_backend
+    ports:
+      - "9999:9999"  # Web server port
+      - "8765:8765"  # WebSocket server port
+    environment:
+      - ROS_HOSTNAME=app_backend
+      - ROS_MASTER_URI=http://vnc_ros:11311
+    depends_on:
+      - vnc_ros
+    networks:
+      - ros_network
+
+  flutter_frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:8080"  # Expose the Flutter web app on port 8080
+    depends_on:
+      - app_backend
+    networks:
+      - ros_network
+    stdin_open: true  # Keep STDIN open
+    tty: true         # Allocate a pseudo-TTY
+    environment:
+      - TERM=xterm-256color
+      - FLUTTER_WEB_PORT=8081
+
+  # flutter_dev:
+  #   build:
+  #     context: ./ima-frontend/dev_container
+  #   volumes:
+  #     - ./ima-frontend:/app
+  #   ports:
+  #     - "8081:8081"
+  #   environment:
+  #     - FLUTTER_WEB_PORT=8081
+  #   tty: true
+  #   stdin_open: true
+  #   networks:
+  #     - ros_network
+  #   depends_on:
+  #     - app_backend
+
+networks:
+  ros_network:
+    driver: bridge
+
+volumes:
+  flutter-data:

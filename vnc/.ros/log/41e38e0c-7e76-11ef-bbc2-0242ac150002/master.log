@@ -1,0 +1,39 @@
+[rosmaster.main][INFO] 2024-09-29 15:19:45,463: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2024-09-29 15:19:45,464: Starting ROS Master Node
+[xmlrpc][INFO] 2024-09-29 15:19:45,465: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2024-09-29 15:19:45,465: Started XML-RPC server [http://vnc_ros:11311/]
+[rosmaster.master][INFO] 2024-09-29 15:19:45,465: Master initialized: port[11311], uri[http://vnc_ros:11311/]
+[xmlrpc][INFO] 2024-09-29 15:19:45,465: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2024-09-29 15:19:45,522: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2024-09-29 15:19:45,525: +PARAM [/roslaunch/uris/host_vnc_ros__35643] by /roslaunch
+[rosmaster.master][INFO] 2024-09-29 15:19:45,552: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2024-09-29 15:19:45,552: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2024-09-29 15:19:45,568: +SERVICE [/rosout/get_loggers] /rosout http://vnc_ros:46497/
+[rosmaster.master][INFO] 2024-09-29 15:19:45,568: +SERVICE [/rosout/set_logger_level] /rosout http://vnc_ros:46497/
+[rosmaster.master][INFO] 2024-09-29 15:19:45,570: +PUB [/rosout_agg] /rosout http://vnc_ros:46497/
+[rosmaster.master][INFO] 2024-09-29 15:19:45,573: +SUB [/rosout] /rosout http://vnc_ros:46497/
+[rosmaster.master][INFO] 2024-09-29 15:19:45,962: +PUB [/turtle1/cmd_vel] /talker_80_1727623185938 http://python_server:43439/
+[rosmaster.master][INFO] 2024-09-29 15:19:46,059: +PUB [/rosout] /talker_80_1727623185938 http://python_server:43439/
+[rosmaster.master][INFO] 2024-09-29 15:19:46,062: +SERVICE [/talker_80_1727623185938/get_loggers] /talker_80_1727623185938 http://python_server:43439/
+[rosmaster.master][INFO] 2024-09-29 15:19:46,063: +SERVICE [/talker_80_1727623185938/set_logger_level] /talker_80_1727623185938 http://python_server:43439/
+[rosmaster.master][INFO] 2024-09-29 15:19:46,065: publisherUpdate[/rosout] -> http://vnc_ros:46497/ ['http://python_server:43439/']
+[rosmaster.master][INFO] 2024-09-29 15:19:46,110: publisherUpdate[/rosout] -> http://vnc_ros:46497/ ['http://python_server:43439/']: sec=0.04, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2024-09-29 15:19:51,008: +PUB [/rosout] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,009: +SERVICE [/turtlesim/get_loggers] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,010: +SERVICE [/turtlesim/set_logger_level] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,012: +PARAM [/turtlesim/background_r] by /turtlesim
+[rosmaster.master][INFO] 2024-09-29 15:19:51,013: +PARAM [/turtlesim/background_g] by /turtlesim
+[rosmaster.master][INFO] 2024-09-29 15:19:51,014: +PARAM [/turtlesim/background_b] by /turtlesim
+[rosmaster.master][INFO] 2024-09-29 15:19:51,019: publisherUpdate[/rosout] -> http://vnc_ros:46497/ ['http://python_server:43439/', 'http://vnc_ros:36147/']
+[rosmaster.master][INFO] 2024-09-29 15:19:51,031: publisherUpdate[/rosout] -> http://vnc_ros:46497/ ['http://python_server:43439/', 'http://vnc_ros:36147/']: sec=0.01, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2024-09-29 15:19:51,033: +SERVICE [/clear] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,033: +SERVICE [/reset] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,034: +SERVICE [/spawn] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,034: +SERVICE [/kill] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,035: +CACHEDPARAM [/rosout_disable_topics_generation] by /turtlesim
+[rosmaster.master][INFO] 2024-09-29 15:19:51,039: +SUB [/turtle1/cmd_vel] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,051: +PUB [/turtle1/pose] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,051: +PUB [/turtle1/color_sensor] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,052: +SERVICE [/turtle1/set_pen] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,052: +SERVICE [/turtle1/teleport_relative] /turtlesim http://vnc_ros:36147/
+[rosmaster.master][INFO] 2024-09-29 15:19:51,053: +SERVICE [/turtle1/teleport_absolute] /turtlesim http://vnc_ros:36147/
